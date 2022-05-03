@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace working_with_arrays
+namespace Working_with_arrays
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!"); 
+            Console.WriteLine("Hello World!");
         }
     }
 }
