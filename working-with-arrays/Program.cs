@@ -42,6 +42,34 @@ namespace Working_with_arrays
 
             string strOddNums = string.Join(" ", oddNums);
 
+            int countUpCaseArrays1 = 0;
+            int countUpCaseArrays2 = 0;
+
+            foreach (char countUpCaseArray1 in strEvenNums)
+            {
+                if (char.IsUpper(countUpCaseArray1))
+                {
+                    countUpCaseArrays1++;
+                }
+            }
+
+            foreach (char countUpCaseArray2 in strOddNums)
+            {
+                if (char.IsUpper(countUpCaseArray2))
+                {
+                    countUpCaseArrays2++;
+                }
+            }
+
+            if (countUpCaseArrays1 > countUpCaseArrays2)
+            {
+                Console.WriteLine("Array #1 has more uppercase characters");
+            }
+            else if (countUpCaseArrays1 < countUpCaseArrays2)
+            {
+                Console.WriteLine("Array #2 has more uppercase characters");
+            }
+
             Console.WriteLine($"array #1 - {strEvenNums}");
             Console.WriteLine($"array #2 - {strOddNums}");
         }
